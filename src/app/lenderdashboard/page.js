@@ -12,7 +12,7 @@ export default function Dashboard() {
 
   return (
     <div className="min-h-screen bg-white">
-      <div className="max-w-5xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden my-8">
+      <div className="w-[80%] mx-auto bg-white shadow-lg rounded-lg overflow-hidden my-8">
         {/* Top Navigation Bar */}
         <div className="flex justify-between items-center bg-blue-600 text-white px-6 py-4">
           <div className="font-bold text-xl">LENDING HUB</div>

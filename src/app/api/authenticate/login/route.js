@@ -4,7 +4,7 @@ import { NextResponse } from "next/server";
 import User from "@/models/userModel";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
-import { connect } from "@/dbconfig/dbconfig"; // Ensure DB connection
+import { connect } from "@/dbconfig/mongodbconfig"; // Ensure DB connection
 
 export async function POST(req) {
     await connect(); // Ensure MongoDB connection

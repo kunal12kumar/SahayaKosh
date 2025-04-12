@@ -12,6 +12,7 @@ import {
   MobileNavToggle,
   MobileNavMenu,
 } from "@/components/ui/resizable-navbar";
+import Link from "next/link";
 import { useState } from "react";
 
 export function Header() {
@@ -45,8 +46,8 @@ export function Header() {
           <NavbarLogo />
           <NavItems items={navItems} />
           <div className="flex items-center gap-4">
-            <NavbarButton variant="primary" className="bg-[#2c67f2] text-white" >Login</NavbarButton>
-            <NavbarButton variant="primary" className="bg-[#2c67f2]  text-white" >Register</NavbarButton>
+          <Link href="/auth/login">     <NavbarButton variant="primary" className="bg-[#2c67f2] text-white" >Login</NavbarButton> </Link>
+          <Link href="/auth/registration/accounttypetoggle">     <NavbarButton variant="primary" className="bg-[#2c67f2]  text-white" >Register</NavbarButton>  </Link>
           </div>
         </NavBody>
 
@@ -70,18 +71,18 @@ export function Header() {
               </a>
             ))}
             <div className="flex w-full flex-col gap-4">
-              <NavbarButton
+             <Link href="/auth/login"> <NavbarButton
                 onClick={() => setIsMobileMenuOpen(false)}
                 variant="primary"
                 className="w-full bg-[#2c67f2] text-white">
                 Login
-              </NavbarButton>
-              <NavbarButton
+              </NavbarButton> </Link>
+            <Link href="/auth/registration/accounttypetoggle">  <NavbarButton
                 onClick={() => setIsMobileMenuOpen(false)}
                 variant="primary"
                 className="w-full bg-[#2c67f2] text-white">
                 Register
-              </NavbarButton>
+              </NavbarButton> </Link>
             </div>
           </MobileNavMenu>
         </MobileNav>

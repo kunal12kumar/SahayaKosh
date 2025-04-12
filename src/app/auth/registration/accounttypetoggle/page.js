@@ -13,9 +13,9 @@ const RoleSelection = () => {
     // Add a slight delay for better UX
     setTimeout(() => {
       if (role === 'borrower') {
-        router.push('/signup/borrower');
+        router.push('/auth/registration/accounttypetoggle/borrowerregistration');
       } else {
-        router.push('/signup/lender');
+        router.push('/auth/registration/accounttypetoggle/lenderregistration');
       }
     }, 300);
   };

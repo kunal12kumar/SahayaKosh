@@ -130,52 +130,26 @@ function LoginPage() {
                 <a href="#" className="text-sm text-blue-600 hover:text-blue-800">Forgot password?</a>
               </div>
 
+              <p className="text-sm text-center text-gray-500">
+                Don't have an account? <a href="#" className="text-blue-600 hover:underline">Sign up</a>
+              </p>
+              <p className="mt-4 text-xs text-gray-500">
+                By signing in, you agree to our <a href="#" className="text-blue-600 hover:underline">Terms of Service</a> and <a href="#" className="text-blue-600 hover:underline">Privacy Policy</a>
+              </p>
+
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-4 rounded-md transition-colors focus:outline-none focus:ring-4 focus:ring-blue-300"
+                className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 my-3 px-4 rounded-md transition-colors focus:outline-none focus:ring-4 focus:ring-blue-300"
               >
                 {loading ? 'Signing In...' : 'Sign In'}
               </button>
 
-              <div className="flex items-center mt-4">
-                <input
-                  type="checkbox"
-                  id="lowBandwidth"
-                  name="lowBandwidth"
-                  checked={formData.lowBandwidth}
-                  onChange={handleChange}
-                  className="h-4 w-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500"
-                />
-                <label htmlFor="lowBandwidth" className="ml-2 block text-sm text-gray-500">
-                  Enable low-bandwidth mode (text only)
-                </label>
-              </div>
+
             </form>
           </div>
 
-          <div className={`mt-8 text-center ${formData.lowBandwidth ? '' : 'bg-white shadow-md rounded-lg p-6'}`}>
-            <div className="flex justify-center space-x-8 mb-4">
-              <div className="flex flex-col items-center">
-                <div className="text-2xl text-emerald-500 mb-1">🔒</div>
-                <span className="text-xs text-gray-500">Bank-Level Security</span>
-              </div>
-              <div className="flex flex-col items-center">
-                <div className="text-2xl text-emerald-500 mb-1">👥</div>
-                <span className="text-xs text-gray-500">10,000+ Users</span>
-              </div>
-              <div className="flex flex-col items-center">
-                <div className="text-2xl text-emerald-500 mb-1">✓</div>
-                <span className="text-xs text-gray-500">Verified Platform</span>
-              </div>
-            </div>
-            <p className="text-sm text-gray-500">
-              Don't have an account? <a href="#" className="text-blue-600 hover:underline">Sign up</a>
-            </p>
-            <p className="mt-4 text-xs text-gray-500">
-              By signing in, you agree to our <a href="#" className="text-blue-600 hover:underline">Terms of Service</a> and <a href="#" className="text-blue-600 hover:underline">Privacy Policy</a>
-            </p>
-          </div>
+         
         </div>
       </div>
     </div>

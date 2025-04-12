@@ -1,5 +1,6 @@
 // In this we will take all the information about the borrowerregistraion 
 "use client"
+import Link from 'next/link';
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { FiUpload, FiUser, FiMail, FiPhone, FiCalendar, FiHome, FiBriefcase, FiDollarSign, FiFileText } from 'react-icons/fi';
@@ -662,12 +663,12 @@ const BorrowerPersonalForm = () => {
 
         {/* Submit Button */}
         <div className="pt-6">
-          <button
+        <Link href='/auth/registration/Sendotp'> <button
             type="submit"
-            className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors"
+            className="w-full cursor-pointer bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors"
           >
             Submit Application
-          </button>
+          </button>  </Link> 
         </div>
       </form>
     </div>
