@@ -1,6 +1,7 @@
 // This page contain all the information about the website means it is about us page 
 "use client"
 import React from 'react';
+import Image from "next/image";
 
 const AboutUs = () => {
   return (
@@ -26,7 +27,7 @@ const AboutUs = () => {
             </p>
           </div>
           <div className="md:w-1/2 md:pl-12">
-            <img 
+            <Image 
               src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
               alt="Financial inclusion" 
               className="rounded-lg shadow-lg"
@@ -78,7 +79,7 @@ const AboutUs = () => {
             </p>
           </div>
           <div className="md:w-1/2">
-            <img 
+            <Image 
               src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
               alt="Credit scoring" 
               className="rounded-lg shadow-lg"
@@ -97,7 +98,7 @@ const AboutUs = () => {
             </p>
           </div>
           <div className="md:w-1/2">
-            <img 
+            <Image 
               src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
               alt="Trust building" 
               className="rounded-lg shadow-lg"
