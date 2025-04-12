@@ -1,9 +1,70 @@
-// This page contain all the information about the website means it is about us page 
-"use client"
+"use client";
 import React from 'react';
-import Image from "next/image";
+import Image from 'next/image';
 
 const AboutUs = () => {
+  // Problem data for mapping
+  const problems = [
+    {
+      icon: "🏦",
+      title: "Lack of Access",
+      description: "Many individuals and small businesses can't get loans through conventional banks"
+    },
+    {
+      icon: "📊",
+      title: "Outdated Systems",
+      description: "Traditional credit scores don't capture the full financial picture"
+    },
+    {
+      icon: "📝",
+      title: "Complex Procedures",
+      description: "Current processes intimidate those with limited financial literacy"
+    },
+    {
+      icon: "🤝",
+      title: "Trust Deficit",
+      description: "Borrowers and lenders struggle to trust each other without established systems"
+    }
+  ];
+
+  // Team data for mapping
+  const teamMembers = [
+    {
+      emoji: "👨‍💼",
+      name: "John Smith",
+      position: "Founder & CEO",
+      bio: "15+ years in fintech and financial inclusion"
+    },
+    {
+      emoji: "👩‍💻",
+      name: "Maria Garcia",
+      position: "CTO",
+      bio: "Expert in inclusive technology solutions"
+    },
+    {
+      emoji: "👨‍🌾",
+      name: "Kwame Osei",
+      position: "Community Director",
+      bio: "Deep roots in local business communities"
+    }
+  ];
+
+  // Values data for mapping
+  const values = [
+    {
+      title: "Inclusion",
+      description: "We believe everyone deserves access to fair financial services, regardless of their background or circumstances."
+    },
+    {
+      title: "Transparency",
+      description: "No hidden fees, no complex terms - just clear, honest communication."
+    },
+    {
+      title: "Community",
+      description: "We're building a network where trust is earned and shared for mutual benefit."
+    }
+  ];
+
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
@@ -30,7 +91,10 @@ const AboutUs = () => {
             <Image 
               src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
               alt="Financial inclusion" 
+              width={500}
+              height={300}
               className="rounded-lg shadow-lg"
+              priority
             />
           </div>
         </div>
@@ -41,26 +105,13 @@ const AboutUs = () => {
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold text-blue-800 mb-12 text-center">The Problem We Solve</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <div className="text-blue-600 text-3xl mb-4">🏦</div>
-              <h3 className="text-xl font-semibold mb-2 text-blue-800">Lack of Access</h3>
-              <p className="text-gray-700">Many individuals and small businesses can't get loans through conventional banks</p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <div className="text-blue-600 text-3xl mb-4">📊</div>
-              <h3 className="text-xl font-semibold mb-2 text-blue-800">Outdated Systems</h3>
-              <p className="text-gray-700">Traditional credit scores don't capture the full financial picture</p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <div className="text-blue-600 text-3xl mb-4">📝</div>
-              <h3 className="text-xl font-semibold mb-2 text-blue-800">Complex Procedures</h3>
-              <p className="text-gray-700">Current processes intimidate those with limited financial literacy</p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <div className="text-blue-600 text-3xl mb-4">🤝</div>
-              <h3 className="text-xl font-semibold mb-2 text-blue-800">Trust Deficit</h3>
-              <p className="text-gray-700">Borrowers and lenders struggle to trust each other without established systems</p>
-            </div>
+            {problems.map((problem, index) => (
+              <div key={index} className="bg-white p-6 rounded-lg shadow-md">
+                <div className="text-blue-600 text-3xl mb-4">{problem.icon}</div>
+                <h3 className="text-xl font-semibold mb-2 text-blue-800">{problem.title}</h3>
+                <p className="text-gray-700">{problem.description}</p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
@@ -82,6 +133,8 @@ const AboutUs = () => {
             <Image 
               src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
               alt="Credit scoring" 
+              width={500}
+              height={300}
               className="rounded-lg shadow-lg"
             />
           </div>
@@ -101,6 +154,8 @@ const AboutUs = () => {
             <Image 
               src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
               alt="Trust building" 
+              width={500}
+              height={300}
               className="rounded-lg shadow-lg"
             />
           </div>
@@ -112,24 +167,16 @@ const AboutUs = () => {
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold text-blue-800 mb-12 text-center">Our Team</h2>
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white p-6 rounded-lg shadow-md text-center">
-              <div className="w-32 h-32 mx-auto mb-4 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 text-4xl">👨‍💼</div>
-              <h3 className="text-xl font-semibold mb-2 text-blue-800">John Smith</h3>
-              <p className="text-blue-600 font-medium mb-2">Founder & CEO</p>
-              <p className="text-gray-700">15+ years in fintech and financial inclusion</p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-md text-center">
-              <div className="w-32 h-32 mx-auto mb-4 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 text-4xl">👩‍💻</div>
-              <h3 className="text-xl font-semibold mb-2 text-blue-800">Maria Garcia</h3>
-              <p className="text-blue-600 font-medium mb-2">CTO</p>
-              <p className="text-gray-700">Expert in inclusive technology solutions</p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-md text-center">
-              <div className="w-32 h-32 mx-auto mb-4 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 text-4xl">👨‍🌾</div>
-              <h3 className="text-xl font-semibold mb-2 text-blue-800">Kwame Osei</h3>
-              <p className="text-blue-600 font-medium mb-2">Community Director</p>
-              <p className="text-gray-700">Deep roots in local business communities</p>
-            </div>
+            {teamMembers.map((member, index) => (
+              <div key={index} className="bg-white p-6 rounded-lg shadow-md text-center">
+                <div className="w-32 h-32 mx-auto mb-4 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 text-4xl">
+                  {member.emoji}
+                </div>
+                <h3 className="text-xl font-semibold mb-2 text-blue-800">{member.name}</h3>
+                <p className="text-blue-600 font-medium mb-2">{member.position}</p>
+                <p className="text-gray-700">{member.bio}</p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
@@ -138,18 +185,12 @@ const AboutUs = () => {
       <div className="container mx-auto px-6 py-16">
         <h2 className="text-3xl font-bold text-blue-800 mb-12 text-center">Our Core Values</h2>
         <div className="grid md:grid-cols-3 gap-8">
-          <div className="border-l-4 border-blue-500 pl-6">
-            <h3 className="text-xl font-semibold mb-2 text-blue-800">Inclusion</h3>
-            <p className="text-gray-700">We believe everyone deserves access to fair financial services, regardless of their background or circumstances.</p>
-          </div>
-          <div className="border-l-4 border-blue-500 pl-6">
-            <h3 className="text-xl font-semibold mb-2 text-blue-800">Transparency</h3>
-            <p className="text-gray-700">No hidden fees, no complex terms - just clear, honest communication.</p>
-          </div>
-          <div className="border-l-4 border-blue-500 pl-6">
-            <h3 className="text-xl font-semibold mb-2 text-blue-800">Community</h3>
-            <p className="text-gray-700">We're building a network where trust is earned and shared for mutual benefit.</p>
-          </div>
+          {values.map((value, index) => (
+            <div key={index} className="border-l-4 border-blue-500 pl-6">
+              <h3 className="text-xl font-semibold mb-2 text-blue-800">{value.title}</h3>
+              <p className="text-gray-700">{value.description}</p>
+            </div>
+          ))}
         </div>
       </div>
     </div>
