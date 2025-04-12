@@ -18,19 +18,19 @@ export function Header() {
   const navItems = [
     {
       name: "About Us",
-      link: "#features",
+      link: "/Landingpage/Aboutus",
     },
     {
       name: "How It Works",
-      link: "#pricing",
+      link: "/Landingpage/HowItWork",
     },
     {
       name: "Contact",
-      link: "#contact",
+      link: "/Landingpage/contactus",
     },
     {
       name: "FAQ",
-      link:"#faq"
+      link:"/Landingpage"
     }
   ];
 
