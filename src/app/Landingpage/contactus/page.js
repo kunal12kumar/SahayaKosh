@@ -9,7 +9,7 @@ const Contact = () => {
       <div className="bg-blue-600 text-white py-20">
         <div className="container mx-auto px-6 text-center">
           <h1 className="text-4xl font-bold mb-4">Contact Us</h1>
-          <p className="text-xl">We'd love to hear from you! Reach out with questions, feedback, or partnership inquiries.</p>
+          <p className="text-xl">We&apos;d love to hear from you! Reach out with questions, feedback, or partnership inquiries.</p>
         </div>
       </div>
 
@@ -124,7 +124,7 @@ const Contact = () => {
               </div>
             </button>
             <div className="px-6 py-4 bg-white">
-              <p className="text-gray-700">You can sign up by clicking the "Become a Borrower" button on our homepage. The process takes about 10 minutes and requires basic information about yourself and your financial needs.</p>
+              <p className="text-gray-700">You can sign up by clicking the Become a Borrower button on our homepage. The process takes about 10 minutes and requires basic information about yourself and your financial needs.</p>
             </div>
           </div>
           

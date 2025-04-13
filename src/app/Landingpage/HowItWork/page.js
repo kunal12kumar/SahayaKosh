@@ -42,7 +42,7 @@ const HowItWorks = () => {
             <div className="md:w-3/4">
               <h3 className="text-2xl font-semibold text-blue-700 mb-4">Get Matched with Lenders</h3>
               <p className="text-gray-700 mb-4">
-                Our platform connects you with individual and institutional lenders who are interested in supporting borrowers like you. You'll see loan offers with different terms and interest rates.
+                Our platform connects you with individual and institutional lenders who are interested in supporting borrowers like you. You&apos;ll see loan offers with different terms and interest rates.
               </p>
               <ul className="list-disc pl-5 text-gray-700 space-y-2">
                 <li>Choose from multiple offers</li>

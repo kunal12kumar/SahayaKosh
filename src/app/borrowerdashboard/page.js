@@ -1,6 +1,7 @@
 "use client"
 import React, { useState } from 'react';
 import { Star, Upload, Store, HandCoins, ChartLine, Calendar, PlusCircle, GraduationCap, Users, Bell, UserCircle, LogOut, Edit, FileText, ExternalLink, ChartBar, Receipt, History, CreditCard, CalendarPlus, CheckCircle, XCircle } from 'lucide-react';
+import Image from 'next/image';
 
 const BorrowerDashboard = () => {
   const [profileImage, setProfileImage] = useState(null);
@@ -152,7 +153,7 @@ const BorrowerDashboard = () => {
           <div className="relative mr-5">
             {profileImage ? (
               <div className="w-20 h-20 rounded-lg overflow-hidden">
-                <img src={profileImage} alt="Business Logo" className="w-full h-full object-cover" />
+                <Image src={profileImage} alt="Business Logo" className="w-full h-full object-cover" />
               </div>
             ) : (
               <div className="w-20 h-20 bg-[#7c5dfa] rounded-lg flex items-center justify-center text-3xl text-white">
@@ -173,7 +174,7 @@ const BorrowerDashboard = () => {
           </div>
          
           <div className="flex-grow ">
-            <h1 className="text-xl font-semibold mb-1">Maria's Bakery</h1>
+            <h1 className="text-xl font-semibold mb-1">Maria&apos;s Bakery</h1>
             <p className="text-[#94a3b8] mb-2">Food & Beverage · Local Business</p>
             
            

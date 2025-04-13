@@ -81,10 +81,10 @@ const AboutUs = () => {
           <div className="md:w-1/2 mb-8 md:mb-0">
             <h2 className="text-3xl font-bold text-blue-800 mb-6">Our Mission</h2>
             <p className="text-gray-700 mb-4">
-              We're building a peer-to-peer lending platform that bridges the gap between underbanked individuals, small businesses, and lenders who want to make a difference.
+              We&apos;re building a peer-to-peer lending platform that bridges the gap between underbanked individuals, small businesses, and lenders who want to make a difference.
             </p>
             <p className="text-gray-700">
-              Traditional banking systems often exclude those who need financial support the most. We're changing that by creating an inclusive, transparent, and community-driven lending ecosystem.
+              Traditional banking systems often exclude those who need financial support the most. We&apos;re changing that by creating an inclusive, transparent, and community-driven lending ecosystem.
             </p>
           </div>
           <div className="md:w-1/2 md:pl-12">

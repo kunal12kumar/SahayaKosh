@@ -4,6 +4,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Head from 'next/head';
+import Image from 'next/image';
 
 export default function LoanOpportunities() {
   const [opportunities, setOpportunities] = useState([
@@ -193,7 +194,7 @@ export default function LoanOpportunities() {
               <div key={opportunity.id} className="bg-white rounded-lg shadow overflow-hidden">
                 <div className="p-6">
                   <div className="flex items-start">
-                    <img
+                    <Image
                       src={opportunity.imageUrl}
                       alt={opportunity.businessName}
                       className="w-16 h-16 rounded-full object-cover mr-4"

@@ -131,7 +131,7 @@ function LoginPage() {
               </div>
 
               <p className="text-sm text-center text-gray-500">
-                Don't have an account? <a href="#" className="text-blue-600 hover:underline">Sign up</a>
+                Don&apos;t have an account? <a href="#" className="text-blue-600 hover:underline">Sign up</a>
               </p>
               <p className="mt-4 text-xs text-gray-500">
                 By signing in, you agree to our <a href="#" className="text-blue-600 hover:underline">Terms of Service</a> and <a href="#" className="text-blue-600 hover:underline">Privacy Policy</a>

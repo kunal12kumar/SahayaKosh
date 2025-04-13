@@ -121,7 +121,7 @@ export default function OtpVerificationPage() {
           <h2 className="text-3xl font-bold text-gray-900">Verify Your Email</h2>
           <div className="mt-4 flex items-center justify-center text-gray-600">
             <FiMail className="mr-2" />
-            <p>We've sent a verification code to {email}</p>
+            <p>We&apos;ve sent a verification code to {email}</p>
           </div>
         </div>
 
@@ -182,7 +182,7 @@ export default function OtpVerificationPage() {
 
           <div className="mt-6 text-center text-sm">
             <p className="text-gray-600">
-              Didn't receive code?{' '}
+              Didn&apos;t receive code?{' '}
               <button
                 type="button"
                 onClick={resendOtp}

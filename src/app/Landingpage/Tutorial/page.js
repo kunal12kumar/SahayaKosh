@@ -1,6 +1,7 @@
 // tutorial page
 "use client"
 import React from "react";
+import Image from "next/image";
 
 const Tutorials = () => {
   return (
@@ -16,7 +17,7 @@ const Tutorials = () => {
         {/* Tutorial Card 1 */}
         <div className="bg-white p-5 rounded-xl shadow">
           <div className="flex items-center gap-2 mb-2">
-            <img
+            <Image
               src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg"
               alt="YouTube"
               className="h-6 w-auto"
@@ -35,7 +36,7 @@ const Tutorials = () => {
         {/* Tutorial Card 2 */}
         <div className="bg-white p-5 rounded-xl shadow">
           <div className="flex items-center gap-2 mb-2">
-            <img
+            <Image
               src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg"
               alt="YouTube"
               className="h-6 w-auto"
@@ -54,7 +55,7 @@ const Tutorials = () => {
         {/* Tutorial Card 3 */}
         <div className="bg-white p-5 rounded-xl shadow">
           <div className="flex items-center gap-2 mb-2">
-            <img
+            <Image
               src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg"
               alt="YouTube"
               className="h-6 w-auto"
@@ -73,7 +74,7 @@ const Tutorials = () => {
         {/* Tutorial Card 4 */}
         <div className="bg-white p-5 rounded-xl shadow">
           <div className="flex items-center gap-2 mb-2">
-            <img
+            <Image
               src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg"
               alt="YouTube"
               className="h-6 w-auto"
