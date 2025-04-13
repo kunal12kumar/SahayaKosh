@@ -1,7 +1,7 @@
 // in this we will write the code for the backend where our login page will extract the data from the database and then authenticate it 
 
 import { NextResponse } from "next/server";
-import User from "@/models/userModel";
+import Lender from "@/models/lenderschema"; 
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 import { connect } from "@/dbconfig/mongodbconfig"; // Ensure DB connection
@@ -27,19 +27,19 @@ export async function POST(req) {
             }, { status: 400 });
         }
 
-        // Check if user exists
-        const existingUser = await User.findOne({ email });
-        if (!existingUser) {
-            return NextResponse.json({ success: false, message: "User does not exist with this email" }, { status: 400 });
+        // Check if Lenderexists
+        const existingLender= await Lender.findOne({ email });
+        if (!existingLender) {
+            return NextResponse.json({ success: false, message: "Lenderdoes not exist with this email" }, { status: 400 });
         }
 
-        // Check if user is verified
-        if (!existingUser.isVarified) {
+        // Check if Lenderis verified
+        if (!existingLender.isVarified) {
             return NextResponse.json({ success: false, message: "Kindly verify your account first" }, { status: 402 });
         }
 
         // Validate password
-        const isPasswordValid = await bcrypt.compare(password, existingUser.password);
+        const isPasswordValid = await bcrypt.compare(password, existingLender.password);
         if (!isPasswordValid) {
             return NextResponse.json({ success: false, message: "Invalid password" }, { status: 400 });
         }
