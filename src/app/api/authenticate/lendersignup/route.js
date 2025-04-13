@@ -1,7 +1,7 @@
 // pages/api/auth/signup.js (for Pages Router)
 // Or: app/api/auth/signup/route.js (for App Router)
 import { connect } from '@/dbconfig/mongodbconfig';
-import Lender from '@/models/Lender';
+import Lender from '@/models/lenderschema';
 
 // For App Router
 export async function POST(request) {
