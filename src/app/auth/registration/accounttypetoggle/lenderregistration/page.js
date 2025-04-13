@@ -459,7 +459,7 @@ const LenderRegistrationForm = () => {
             {errors.terms && <p className="mt-1 text-sm text-red-600">{errors.terms.message}</p>}
 
             <div>
-              <button
+            <Link href='/auth/registration/Sendotp'>  <button
                 type="submit"
                 disabled={isSubmitting}
                 className={`w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 ${
@@ -467,7 +467,7 @@ const LenderRegistrationForm = () => {
                 }`}
               >
                 {isSubmitting ? 'Registering...' : 'Register'}
-              </button>
+              </button>  </Link> 
             </div>
           </form>
         </div>

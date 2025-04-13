@@ -2,6 +2,8 @@
 "use client"
 import React  from "react"
 import { CarouselDemo } from "./slideronfrontpage/page"
+import { InfiniteMovingCardsDemo } from "./Review/page"
+import { GlobeDemo } from "./globe/page"
 
 export default function Landingpage(){
 
@@ -11,6 +13,8 @@ export default function Landingpage(){
             {/* here we are adding coursel */}
             <div>
                 <CarouselDemo></CarouselDemo>
+                <InfiniteMovingCardsDemo></InfiniteMovingCardsDemo>
+                <GlobeDemo></GlobeDemo>
 
             </div>
 
