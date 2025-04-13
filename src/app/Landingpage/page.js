@@ -6,6 +6,7 @@ import { InfiniteMovingCardsDemo } from "./Review/page"
 import { GlobeDemo } from "./globe/page"
 import { BackgroundLines } from "@/components/ui/background-lines"
 import Footer from "./Footer/page";
+import Tutorials from "./Tutorial/page"
 
 export default function Landingpage() {
 
@@ -19,6 +20,8 @@ export default function Landingpage() {
                     <CarouselDemo></CarouselDemo>
 
                 </BackgroundLines>
+
+                <Tutorials></Tutorials>
 
 
                

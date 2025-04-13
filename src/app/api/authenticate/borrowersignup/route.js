@@ -3,14 +3,14 @@
 // pages/api/auth/signup.js (for Pages Router)
 // Or: app/api/auth/signup/route.js (for App Router)
 
-import connectDB from '@/lib/mongodb';
-import Borrowwer from '@/models/Borrowwer';
+import { connect } from '@/dbconfig/mongodbconfig';
+import Borrowwer from '@/models/borrowerregistrationschema';
 
 // For App Router
 export async function POST(request) {
   try {
     // Connect to the database
-    await connectDB();
+    await connect();
     
     // Extract user data from request body
     const { name, email, password } = await request.json();
