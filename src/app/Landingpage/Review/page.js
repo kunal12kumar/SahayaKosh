@@ -4,14 +4,14 @@
 
 import React from "react";
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
-import ColourfulText from "@/components/ui/colourful-text";
+
 
 export function InfiniteMovingCardsDemo() {
   return (
     <div
       className="h-[40rem] rounded-md flex flex-col text-2xl font-bold  antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
-      <h1 className="text-2xl md:text-5xl lg:text-7xl font-bold text-center my-12 text-white relative z-2 font-sans">
-        <ColourfulText text="User Review About Website " /> <br /> 
+      <h1 className="text-2xl sm:text-5xl text-black  font-bold text-center my-12  relative z-2 font-sans">
+        User Reviews About Website  <br /> 
       </h1>
       <InfiniteMovingCards items={testimonials} direction="right" speed="slow" />
     </div>

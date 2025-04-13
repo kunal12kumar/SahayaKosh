@@ -5,6 +5,7 @@ import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { FiUser, FiMail, FiPhone, FiCalendar, FiDollarSign, FiLock } from 'react-icons/fi';
 import axios from 'axios';
+import Link from 'next/link';
 
 const LenderRegistrationForm = () => {
   const { register, handleSubmit, formState: { errors }, watch } = useForm();

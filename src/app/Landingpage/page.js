@@ -5,7 +5,7 @@ import { CarouselDemo } from "./slideronfrontpage/page"
 import { InfiniteMovingCardsDemo } from "./Review/page"
 import { GlobeDemo } from "./globe/page"
 import { BackgroundLines } from "@/components/ui/background-lines"
-import Footer from "./Footer/page"
+import Footer from "./Footer/page";
 
 export default function Landingpage() {
 
@@ -19,6 +19,9 @@ export default function Landingpage() {
                     <CarouselDemo></CarouselDemo>
 
                 </BackgroundLines>
+
+
+               
 
                 <InfiniteMovingCardsDemo></InfiniteMovingCardsDemo>
                 <GlobeDemo></GlobeDemo>
