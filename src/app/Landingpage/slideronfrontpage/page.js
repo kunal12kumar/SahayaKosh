@@ -6,28 +6,29 @@ import Carousel from "@/components/ui/carousel";
 export function CarouselDemo() {
   const slideData = [
     {
-      title: "Mystic Mountains",
+      title: "Financial Empowerment",
       button: "Explore Component",
-      src: "https://images.unsplash.com/photo-1494806812796-244fe51b774d?q=80&w=3534&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      src: "photo/Screenshot 2025-04-12 225656.png",
     },
     {
-      title: "Urban Dreams",
+      title: "Trust-Based Lending",
       button: "Explore Component",
-      src: "https://images.unsplash.com/photo-1518710843675-2540dd79065c?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      src: "photo/business.jpg",
     },
     {
-      title: "Neon Nights",
+      title: "Financial Growth Garden",
       button: "Explore Component",
-      src: "https://images.unsplash.com/photo-1590041794748-2d8eb73a571c?q=80&w=3456&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      src: "photo/6269576.jpg",
     },
     {
-      title: "Desert Whispers",
+      title: "Secure Transfer",
       button: "Explore Component",
-      src: "https://images.unsplash.com/photo-1679420437432-80cfbf88986c?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      src: "photo/6134225.jpg",
     },
   ];
   return (
     <div className="relative overflow-hidden w-full h-full py-20">
+      
       <Carousel slides={slideData} />
     </div>
   );
