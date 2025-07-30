@@ -44,5 +44,5 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 ## Architecture diagram of this project
 ## 📁 Repository File Tree
 
-![File Tree](assets/diagram.png)
+![File Tree](public/photo/diagram_sahaykosh.png)
 
